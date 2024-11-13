@@ -1,0 +1,61 @@
+/* Importa a fonte "Chakra Petch" do Google Fonts, com diferentes pesos */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Define variáveis de cor para fácil uso e alteração no código */
+:root {
+    --cor-principal: #6E859F; /* Cor principal para o texto */
+    --cor-secundaria: #284260; /* Cor secundária para títulos */
+    --cor-destaque: #C92BFC; /* Cor de destaque para botões e links */
+}
+
+/* Estiliza o corpo da página */
+body {
+    font-family: 'Chakra Petch', sans-serif; /* Define a fonte principal */
+    color: var(--cor-principal); /* Aplica a cor principal ao texto */
+}
+
+/* Estilização dos títulos */
+h1, h2, h5 {
+    color: var(--cor-secundaria); /* Aplica a cor secundária nos títulos */
+    font-weight: 700; /* Define os títulos com peso de fonte maior */
+}
+
+/* Estilização específica para elementos com a classe 'lead' e botões de link */
+.lead, .btn-link {
+    color: var(--cor-destaque); /* Aplica a cor de destaque */
+    font-weight: 700; /* Aumenta o peso da fonte para maior visibilidade */
+}
+
+/* Cor padrão dos links */
+a, .btn-link:hover {
+    color: var(--cor-principal); /* Cor principal ao estado normal */
+}
+
+/* Cor dos links ao passar o mouse */
+a:hover {
+    color: var(--cor-destaque); /* Muda para cor de destaque no hover */
+}
+
+/* Define um degradê claro e semi-transparente para o fundo do footer */
+.custom-footer {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(135, 206, 250, 0.2)); /* Degradê leve com transparência */
+    padding: 2rem 0; /* Espaçamento interno do footer */
+}
+
+/* Personalização dos links de redes sociais no footer */
+.link-custom {
+    color: #555; /* Cor inicial dos links no footer */
+    font-weight: bold; /* Define os links em negrito */
+    font-size: 1.1rem; /* Aumenta levemente o tamanho da fonte */
+}
+
+/* Estilo dos links no footer ao passar o mouse */
+.link-custom:hover {
+    color: #ff5733; /* Cor laranja para destaque ao passar o mouse */
+}
+
+/* Define cor e estilo para o texto final do footer */
+.copyright-text {
+    color: #444; /* Cor diferenciada para o texto final do footer */
+    font-size: 0.9rem; /* Tamanho da fonte um pouco menor */
+}
